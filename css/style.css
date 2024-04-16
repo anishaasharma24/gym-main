@@ -1,0 +1,1025 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+  
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 40px;
+}
+
+
+#menubar{
+    color: #fe7000;
+    display: none;
+   }
+
+#menu{
+    display: none;
+    }
+  
+
+    .menu li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 25px 10px;
+  
+  }
+
+   .menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    height: 100%;
+   }
+
+
+/*  */
+
+    @media (max-width:768px){
+      
+      header{
+        flex-direction: column;
+      }
+
+      nav{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color:black;
+        color:white;
+        z-index: 1; 
+        display: none;
+      }
+      .menu li{
+        display: block;
+      }
+
+      .menu li a {
+        color: white; 
+      }
+      #menubar{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: block;
+      }
+
+      
+      #menu:checked ~ nav{
+        display: block !important;
+      }
+    }
+
+
+
+
+
+
+      .backgroundimg{
+          background-image: url('../images/Bbanner.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+         height: 600px;
+          
+      }
+
+      .backgroundimg{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+  
+    
+      }
+
+      .htext{
+        width: 400px;
+        margin: auto;
+      }
+      .htext p{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        
+      }
+
+      .htext button{
+        background-color: #fe7000;
+        padding: 12px 20px;
+        border: none;
+        color: white;
+        font-weight: 800;
+      }
+
+
+      .coloumn p{
+        margin-top: 15px;
+      }
+        
+      
+    @media (max-width:768px){
+      .backgroundimg{
+        flex-direction: column;
+      }
+
+      
+      .htext{
+         width: 330px;
+      }
+
+      .htext p{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 0px  20px;
+        text-align: center;
+        
+          }
+
+        }
+
+    
+
+
+
+        .FYclass{
+          text-align: center;
+          margin: 30px 0px;
+        }
+
+        #head1{
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .CFY{
+          display: flex;
+          gap: 30px;
+          padding: 20px 40px;
+        }
+
+
+        .CFY .coloumn{
+          width: 100%;
+          text-align: center;
+        }
+
+         @media (max-width:768px){
+          
+          .CFY{
+            flex-direction: column;
+            align-items: center!important;
+          }
+
+          #head1{
+            font-size: 25px;
+            text-align: center;
+          }
+         }
+
+
+
+
+
+
+
+
+         .Banner2{
+          background-image: url('../images/banner1.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+         height: 600px;
+         text-align: center;
+          
+         }
+         
+        #head2{
+          font-size: 25px;
+          text-align: center;
+          color: white;
+          padding-top: 20px;
+        }
+
+
+         .Lsmallbox{
+          background-color:#fe7000;
+          width: 70px;
+          height: 60px;
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        
+         }
+
+         
+
+        
+        .Banner2 .row{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px;
+          padding: 20px 80px;
+          
+         }
+         .row .col{
+
+           background-color:white;
+             display: flex;
+             align-items: center;
+             position: relative;
+         }
+            
+
+         .row .col .cols{
+        
+          width: 100%;
+          color:black;
+          line-height: 25px;
+          padding: 0px 10px;
+         
+         }
+         .cols a{
+          color: black;
+          text-decoration: none;
+         }
+
+
+         
+
+         
+
+
+
+
+
+
+
+
+
+
+
+.Body{
+  display: flex;
+  margin-top: 2%;
+
+}
+
+#BT{
+  font-size: 30px;
+ text-align: center;
+  margin-top: 50px;
+
+}
+
+.Body .transformation{
+  width: 100%;
+}
+
+.xyz{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  padding: 30px 30px;
+}
+
+.xyz .box{
+  background-color: #ece9e4;  
+}
+
+.xyz .box:hover{
+  background-color: orange;
+}
+
+.xyz .box h4{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: -34px;
+  padding-left: 10px;
+  position: relative;
+  top: -10%;
+
+}
+
+
+
+
+@media (max-width:768px){
+
+
+.Body{
+  flex-direction: column;
+}
+
+
+#BT{
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+
+.xyz{
+  grid-template-columns: repeat(1,1fr);  
+}
+
+
+.xyz .box{
+   text-align: center; 
+   width: 100%;
+}
+
+.box p{
+  padding: 0px 8px;
+}
+
+
+.box::before{
+  content: "";
+  background-color: #fe6e0086;
+  width: 100%;
+  position: absolute;
+  display: none; 
+ }
+
+.box:hover::before{
+  display: block;
+  }
+  }
+
+
+
+
+
+
+
+
+
+  #OT4{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+
+ .Team{
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
+
+ }
+ .Team .OurC{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  margin-top: 30px;
+ 
+ }
+
+.Team .OurC .overlay{
+  background-color: #fe6e00de;
+  transform: translateY(60px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+
+.Team .OurC:hover .overlay{
+  transform: translateY(0px);
+}
+  
+.overlay{
+  text-align: center;
+}
+
+
+
+@media (max-width:768px){
+  .Team{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offerpart{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .offerpart .col{
+   padding: 30px;
+    
+   }
+
+   #OT4{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.offerpart{
+  background-image: url('../images/offerbanner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 500px;
+  margin-top: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  
+ }
+ 
+ .offerpart .col{
+  width: 100%;
+  
+ }
+
+
+ .offerpart .col h3, p, button{
+  margin-bottom: 30px;
+ }
+
+
+ .offerpart .col h3{
+  font-size: 50px;
+ }
+
+ .offerpart .col p{
+  font-size: 20px;
+ }
+
+
+ .offerpart .col  button{
+
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: 800;
+ }
+
+
+
+
+ @media (max-width:768px){
+  .offerpart .col h3{
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .offerpart .col p{
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 30px;
+  line-height: 25px;
+ }
+
+ .offerpart .col  button{
+  display: block;
+  margin: auto;
+  font-weight: 800;
+ }
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ .Our h4{
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+ }
+
+
+ .Gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 30px;
+  gap: 20px;
+ }
+
+      
+ .Gallery .colGall{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+ }
+
+
+ .gall1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  background-color: orange;
+  transition:all 0.5s linear;
+  
+ }
+
+
+ .Gallery .colGall .hoverlay2{
+  position: absolute;
+  left: 0;
+  top: 50px;
+  padding: 30px;
+  transition: all 05s ease;
+ }
+
+ .Gallery .colGall .hoverlay2 h1{ font-size: 25px; margin-bottom: 15px; color: white;}
+ .Gallery .colGall .hoverlay2 p{ font-size: 14px; margin-bottom: 20px; color: white;}
+ .Gallery .colGall .hoverlay2 a{ padding: 10px 20px; background-color: white; color: black; text-decoration: none;}
+
+ .Gallery .colGall .hoverlay2{
+ display: none;
+ }
+
+ .gall1:hover::before{
+  height: 100%;
+ }
+ .gall1:hover .hoverlay2{
+  display: block;
+ }
+
+ #main-img{
+  transition: all 0.5s linear;
+  width: 100%;
+ }
+ .gall1:hover #main-img{
+transform: translateY(-100%);
+ }
+ 
+ .hoverlay2{
+  text-align: center;
+ }
+  
+ 
+@media (max-width:768px){
+
+  .Gallery {
+  grid-template-columns: repeat(1, 1fr);
+ }
+
+ .Our h4{
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: center;
+ }
+
+ .gall1 .hoverlay2{
+  text-align: center;
+ }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.OurPri{
+  background-color: #eee;
+padding: 20px;
+}
+  .OurPri h5{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .Princing{
+    display: flex;
+    gap: 20px;
+   width: 80%;
+   margin: 30px auto;
+  }
+  .Princing .PrinCol{
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 2px 0px;
+  }
+  .Princing .PrinCol img{
+    width: 100%;
+  }
+
+  .Princing .PrinCol .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    padding: 25px 40px;
+    background-color: white;
+    line-height: 26px;
+    transition: all 0.5s ease-in;
+  }
+
+  .Princing .PrinCol .labels{
+    position: absolute;
+    left: 0;
+    top: 38%;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    color: white;
+  }
+
+  .Princing .PrinCol .pribtn{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+  }
+  .Princing .PrinCol:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+
+  .Princing .PrinCol:hover  .labels{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  
+  }
+
+  .labels h3,h4{
+    text-align: center;
+  }
+
+  .overlay p{
+    text-align: center;
+  }
+
+  .overlay .pribtn{
+    display: block;
+    margin: auto;
+  }
+
+
+
+   @media (max-width:768px){ 
+    
+    .Princing{
+      flex-direction: column;
+      gap: 30px;
+        width: 100%;
+        margin: 20px auto;
+      }
+
+     .OurPri h5{
+      font-size: 25px;
+      text-align: center;
+     }
+
+      .Princing .PrinCol img{
+        width: 100%;
+      
+      }
+      
+  .Princing .PrinCol .overlay{
+  
+    height: 50%;
+    padding: 10px 40px;
+    line-height: 20px;
+  }  
+
+  .labels{
+    text-align: center;
+  }
+
+  .overlay{
+    text-align: center;
+  }
+
+  .overlay .pribtn{
+ text-align: center;
+ 
+  }
+
+}
+
+
+
+
+
+
+
+
+
+  .Testimonial{
+    background-image: url('../images/lastbanner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 500px;
+    align-items: center;
+    color: white;
+    
+   }
+  
+
+   .Testimonial h2{
+    font-size: 30px;
+    padding-top: 50px;
+    text-align: center;
+   }
+
+
+   .lastrow{
+    display: flex;
+    gap: 50px;
+    padding: 90px 50px;
+    line-height: 20px;
+   }
+
+   .lastcol{
+    text-align: center;
+   }
+
+
+
+  .lastcol h1{
+    font-size: 20px;
+   }
+
+   .lastcol p{
+    margin-top: 20px;
+   }
+
+
+   @media (max-width:768px){
+
+   .lastrow{
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+    line-height: 19px;
+   }
+
+   .lastcol{
+    text-align: center;
+   }
+
+   
+  .Testimonial{
+    background-image: url('../images/lastbanner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 700px;
+    align-items: center;
+    color: white; 
+   }
+
+   .Testimonial h2{
+    padding-top: 20px;
+    font-size: 25px;
+   }
+   }
+
+
+
+
+
+
+
+
+
+
+   .Consultant{
+    display: flex;
+    background-color: #fe7000;
+   height: 100px;
+   gap: 40px;
+    color: white;
+    align-items: center;
+    font-size: 27px;
+    justify-content: center;
+   }
+
+
+
+   @media (max-width:768px){
+
+
+   .Consultant{
+     flex-direction: column;
+    height: 110px;
+   gap: 15px;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+   }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.96);
+    padding: 60px;
+    color: white;
+
+  }
+
+  .footerbody {
+    width: 100% !important;
+  
+  }
+
+  .footerbody h1{
+   font-size: 25px;
+   margin-bottom: 30px;
+   text-align: left;
+  }
+  #myInput{
+    padding: 12px 70px;
+    text-align: center;
+  }
+
+  #subscribe{
+  text-decoration: none;
+  color: white;
+  background-color: #fe7000;
+  padding: 10px 30px;
+  font-weight: 800;
+  display: block;
+  width: 30%;
+  margin: 30px auto;
+  
+  }
+
+
+
+  .footerbody .imgicon{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+.footerbody ul li{
+  text-align: left !important;
+  margin-top: -5px;
+}
+
+.footerbody .icons1 .colf ul{
+  padding-left: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+#hf{
+  text-align: center;
+}
+
+
+@media (max-width:768px){
+
+  .footer{
+    flex-direction: column;
+  }
+  
+  #myInput{
+    width: 100%;
+    padding: 8px 40px;
+  }
+  
+ 
+
+  #hf{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #subscribe{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #fe7000;
+    padding: 10px 10px;
+    font-weight: 800;
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+}
+
+#globalimg{
+  width: 100%;
+}
+
+
+.footerbody .imgicon{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer{
+  gap: 50px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+  .row .col{
+    flex-direction: column;
+    text-align: left;
+    
+  }
+.Banner2  .row{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    padding: 20px 40px;
+  }
+
+  .Banner2{
+    height: auto;
+  
+  }
+
+ 
+  .Banner2 .row .col{
+    margin-bottom: 10px;
+  }
+
+ }
