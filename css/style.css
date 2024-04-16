@@ -221,10 +221,13 @@
           position: absolute;
           top: 0px;
           left: 0px;
-        
          }
 
-         
+         @media (max-width:768px){
+  .Lsmallbox{
+    height: auto;
+  }
+}
 
         
         .Banner2 .row{
